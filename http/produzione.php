@@ -1,5 +1,12 @@
 <?php
 
+session_start();
+
+if (!array_key_exists('login', $_SESSION) || $_SESSION['login'] != '1') {
+    echo 'Non sei autorizzato!';
+    exit(0);
+}
+
 require_once 'libs/mysql.php';
 
 function get_lista_caseifici() {
@@ -38,15 +45,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $output = 'Produzione giornaliera salvata correttamente!';
 }
-?><DOCTYPE html>
+?><!DOCTYPE html>
     <html lang="it">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Produzione Giornaliera</title>
-        <link rel="stylesheet" href="css/main.css">
-    </head>
+    <?php include('parts/head.php'); ?>
 
     <body>
         <div class="container">
