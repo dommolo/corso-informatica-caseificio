@@ -1,0 +1,21 @@
+table, tr, td, th {
+    border: 1px solid #aaa;
+}
+
+th {
+    color: #333;
+    background-color: #ddd;
+}
+
+td, th {
+    padding: 10px;
+}
+
+.menu {
+    float: right;
+    padding: 30px;
+}
+
+.copertina {
+    max-height: 80px;
+}

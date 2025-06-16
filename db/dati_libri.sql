@@ -1,0 +1,2 @@
+INSERT INTO `libri` (`id_libro`,`codice`,`titolo`,`autore`,`casa_editrice`,`isbn`,`genere`,`immagine`) VALUES (1,'124','Il castello','Kafka','Einaudi','9788806224110','Romanzo','https://www.ibs.it/images/9788806224110_0_0_536_0_75.jpg');
+INSERT INTO `libri` (`id_libro`,`codice`,`titolo`,`autore`,`casa_editrice`,`isbn`,`genere`,`immagine`) VALUES (2,'123','Metamorfosi','Kafka','Einaudi','8806220632','Romanzo','https://www.ibs.it/images/9788817067065_0_0_536_0_75.jpg');
